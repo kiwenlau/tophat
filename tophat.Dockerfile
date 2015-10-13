@@ -1,3 +1,4 @@
+# why choose python?
 FROM python:2.7
 MAINTAINER kiwenlau@gmail.com
 
@@ -7,6 +8,7 @@ ADD http://depot.galaxyproject.org/package/linux/x86_64/tophat/tophat-2.0.9.Linu
 ADD http://depot.galaxyproject.org/package/linux/x86_64/bowtie2/bowtie2-2.1.0-linux-x86_64.tgz bowtie2-2.1.0-linux-x86_64.tgz
 ADD http://depot.galaxyproject.org/package/linux/x86_64/samtools/samtools-0.1.18-linux-x86_64.tgz samtools-0.1.18-linux-x86_64.tgz 
 
+# add official test data of tophat
 ADD test_data.tar.gz /root
 
 RUN tar zxf tophat-2.0.9.Linux_x86_64.tar.gz
